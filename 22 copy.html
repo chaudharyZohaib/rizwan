@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Rizwan — Portfolio</title>
+  <meta name="description" content="Muhammad Rizwan, 19-year-old passionate animation enthusiast from Karachi. Beginner portfolio with selected works." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      margin: 0;
+      background: #0b0d10; /* dark background */
+      color: #e6ebf1;
+      line-height: 1.6;
+      min-height: 100%;
+    }
+    header, footer {
+      background: #12161b;
+      padding: 20px;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    h1, h2 {
+      color: #6ee7ff;
+    }
+    .hero {padding: 40px 0;}
+    .projects {display: grid; grid-template-columns: 1fr 1fr; gap: 20px;}
+    .projects img {width: 100%; border-radius: 12px;}
+    .card {
+      background: #1a1f25;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .chip {background: #6ee7ff; color: #000; padding: 5px 10px; border-radius: 999px; margin-right: 10px;}
+    a {color: #6ee7ff; text-decoration: none;}/* Particles background layer */
+#particles-js {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+header, main, footer {position: relative; z-index: 1;}
+
+  </style>
+</head>
+<body>
+  <!-- Particle background layer -->
+  <div id="particles-js"></div>
+  <header>
+    <div class="wrap">
+      <h1>Muhammad Rizwan Portfolio</h1>
+    </div>
+  </header>  <main class="wrap">
+    <section class="hero">
+      <h2>Hi, I’m Muhammad Rizwan</h2>
+      <p>I’m 19 years old, male, living in Manzoor Colony, Karachi. I’ve completed my intermediate qualification and I’m passionate about pursuing animation. Though I’m a fresher, I’m motivated to enter the real industry, sharpen my skills, and become a professional animator.</p>
+    </section><section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <span class="chip">Age: 19</span>
+    <span class="chip">Gender: Male</span>
+    <span class="chip">Qualification: Intermediate</span>
+    <p>I am passionate about exploring the world of animation. My journey started with curiosity and experimenting with simple tools, but it quickly turned into a strong drive to learn and grow. I believe animation is not just art, but also a way to bring ideas to life and tell stories visually.</p>
+    <p>I’ve been exploring the easiest and most accessible apps to learn — apps like <strong>Blender</strong> and <strong>SketchUp</strong> are beginner-friendly and give me the chance to practice my skills without limitations.</p>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Projects</h2>
+  <p>Here are some of my beginner animation and 3D modeling works. Each image opens as a separate link.</p>
+  <div class="projects">
+    <div class="card">
+      <a href="images/haha.jpg" target="_blank">
+        <img src="images/haha4.jpg" alt="3D Perfume Bottle Render">
+        <img src="images/haha3.jpg" alt="3D Perfume Bottle Render">
+      </a>
+      <p>3D Perfume Bottle Render</p>
+    </div>
+    <div class="card">
+      <a href="images/project1.jpg" target="_blank">
+        <img src="images/haha2.jpg" alt="3D Rubik’s Cube Render">
+        <img src="images/haha1.jpg" alt="3D Rubik’s Cube Render">
+      </a>
+      <p>3D Rubik’s Cube Render</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>You can reach me for opportunities, collaborations, or learning experiences at:</p>
+    <p>Email: <a href="mailto:rizifunkaar10@gmail.com">rizifunkaar10@gmail.com</a></p>
+    <p>Residence: Karachi, Manzoor Colony</p>
+  </div>
+</section>
+</main>  <footer>
+    <div class="wrap">
+      <small>© <span id="year"></span> Muhammad Rizwan. All rights reserved.</small>
+    </div>
+  </footer>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>  <!-- Particle background script -->  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80 },
+        "size": { "value": 3 },
+        "move": { "speed": 1 },
+        "line_linked": { "enable": true, "color": "#6ee7ff" },
+        "color": { "value": "#6ee7ff" }
+      },
+      "interactivity": {
+        "events": { "onhover": { "enable": true, "mode": "repulse" } }
+      }
+    });
+  </script></body>
+</html>
